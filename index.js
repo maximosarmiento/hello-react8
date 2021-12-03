@@ -12,7 +12,7 @@ const db   = process.env.MONGODB_URI || 'mongodb://localhost/notas';
 const app = express();
 
 // conexion a la base de datos
-
+mongoose
   .connect(db, { useNewUrlParser: true })
   .then(() => {
     console.log(`DB connected @ ${db}`);
